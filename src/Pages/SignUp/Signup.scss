@@ -1,0 +1,87 @@
+    @mixin min__width {
+    min-width: 327px;
+    flex-shrink: 0;
+    padding: 30px 20px;
+    border-radius: 15px;
+    border: 2px solid #0D0D0D;
+    background: #141414;
+}
+
+.signup-container__ {
+    min-height: 100vh;
+    .signup__section {
+        @include min__width();
+        button {
+            border-radius: 10px;
+            border: 1px solid #0D0D0D;
+            background: #191919;
+            color: #FFF;
+            margin-bottom: 20px;
+            .__h {
+                color: #FFF !important;
+                text-align: center;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                font-family: Roboto;
+            }
+        }
+        label {
+            font-family: Roboto !important;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 8px;
+        }
+        input {
+            font-family: Roboto !important;
+            border-radius: 10px;
+            border: 1px solid #0D0D0D;
+            background: #191919;
+            padding: 8px 10px;
+            outline: none;
+            color: #FFF;
+        }
+        form {
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .signup__btn {
+            max-width: 110px;
+            margin-left: auto;
+            h3 {
+                color: #FFF;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+    .bottom__text {
+        h4 {
+            color: #FFF;
+            font-family: Roboto !important;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        span {
+            color: #9D0000;
+            font-family: Roboto;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}
