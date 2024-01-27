@@ -1,87 +1,101 @@
-    @mixin min__width {
-    min-width: 327px;
-    flex-shrink: 0;
-    padding: 30px 20px;
-    border-radius: 15px;
-    border: 2px solid #0D0D0D;
-    background: #141414;
+@mixin min__width {
+  min-width: 327px;
+  flex-shrink: 0;
+  padding: 30px 20px;
+  border-radius: 15px;
+  border: 2px solid #0d0d0d;
+  background: #141414;
+}
+
+.__app__white__signin {
+  background: #fff !important;
+  border-radius: 15px;
+  border: 2px solid #000060;
+  background: #fff;
 }
 
 .signup-container__ {
-    min-height: 100vh;
-    .signup__section {
-        @include min__width();
-        button {
-            border-radius: 10px;
-            border: 1px solid #0D0D0D;
-            background: #191919;
-            color: #FFF;
-            margin-bottom: 20px;
-            .__h {
-                color: #FFF !important;
-                text-align: center;
-                font-family: Inter;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                font-family: Roboto;
-            }
-        }
-        label {
-            font-family: Roboto !important;
-            color: #FFF;
-            font-family: Inter;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            margin-bottom: 8px;
-        }
-        input {
-            font-family: Roboto !important;
-            border-radius: 10px;
-            border: 1px solid #0D0D0D;
-            background: #191919;
-            padding: 8px 10px;
-            outline: none;
-            color: #FFF;
-        }
-        form {
-            div {
-                display: flex;
-                flex-direction: column;
-            }
-        }
-        .signup__btn {
-            max-width: 110px;
-            margin-left: auto;
-            h3 {
-                color: #FFF;
-                font-family: Inter;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-            }
-        }
+  .signup__section {
+    // White background for signup
+    .__app__white__btn {
+      background: #fff !important;
+      color: #000060 !important;
     }
-    .bottom__text {
-        h4 {
-            color: #FFF;
-            font-family: Roboto !important;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-        span {
-            color: #9D0000;
-            font-family: Roboto;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-        }
+    @include min__width();
+    button {
+      border-radius: 10px;
+      border: 1px solid #0d0d0d;
+      background: #191919;
+      color: #fff;
+      margin-bottom: 20px;
+      .__h {
+        color: #fff;
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        font-family: Roboto;
+      }
     }
+    label {
+      font-family: Roboto !important;
+      color: #fff;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 8px;
+    }
+    input {
+      font-family: Roboto !important;
+      border-radius: 10px;
+      border: 1px solid #0d0d0d;
+      background: #191919;
+      padding: 8px 10px;
+      outline: none;
+      color: #fff;
+    }
+    form {
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .signup__btn {
+      max-width: 110px;
+      margin-left: auto;
+      h3 {
+        color: #fff;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        @media (max-width: 855px) {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .bottom__text {
+    h4 {
+      color: #fff;
+      font-family: Roboto !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    span {
+      color: #9d0000;
+      font-family: Roboto;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
 }

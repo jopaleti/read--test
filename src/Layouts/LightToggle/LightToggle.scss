@@ -1,0 +1,14 @@
+.__light__background__toggler {
+    position: relative;
+    .__toggler {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        z-index: 100;
+    }
+    .__light {
+        padding: 6px 6px 6px 12px;
+        border-radius: 28px;
+        background-color: #000060;
+    }
+}

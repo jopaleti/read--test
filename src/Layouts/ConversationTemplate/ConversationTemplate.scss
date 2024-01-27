@@ -1,0 +1,105 @@
+.__conversation__template {
+  .__app__white__conversation {
+    color: #000060ab !important;
+  }
+  display: flex;
+  position: relative;
+  .__aside__mobile {
+    position: absolute !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10000000;
+    background-color: #000;
+    display: unset !important;
+    min-width: 60%;
+  }
+  .__app__white__aside__mobile {
+    background-color: white !important;
+  }
+  .__aside {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @media (max-width: 855px) {
+      display: none;
+    }
+    .__aside__top {
+      padding-left: 20px;
+      height: 7%;
+      padding-bottom: 18px;
+      h1 {
+        color: #fff;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+    .__aside__middle {
+      height: 68%;
+      h1 {
+        color: #fffeff;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .__middle__lst {
+        color: #fffeff;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .__middle__overflow__container {
+        padding-left: 20px;
+        height: 93%;
+        overflow-y: auto;
+      }
+    }
+    .__aside__bottom {
+      padding-left: 20px;
+      height: 25%;
+      div {
+        h3 {
+          color: #fff;
+          font-family: Raleway;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        .__logout {
+          color: #ed8c8c;
+          font-family: Raleway;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  .__menu {
+    padding: 16px 0px 16px 16px;
+    // width: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    // background-color: red;
+  }
+  .__main__page {
+    width: 80%;
+    @media (max-width: 855px) {
+      width: 100%;
+    }
+  }
+}

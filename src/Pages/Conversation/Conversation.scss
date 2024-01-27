@@ -1,0 +1,166 @@
+.__conversation__container {
+  .__main__conversation__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+    }
+    .__sub__container__top {
+      height: 8%;
+      display: flex;
+      justify-content: end;
+      .__top__flex {
+        @media (min-width: 855px) {
+          justify-content: end;
+        }
+      }
+      img {
+        width: 33px;
+        height: 32px;
+        @media (min-width: 855px) {
+          // align-self: flex-end !important;
+        }
+      }
+      .___menu {
+        @media (min-width: 855px) {
+          display: none;
+        }
+      }
+    }
+    .__sub__container__middle {
+      height: 80%;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      .__chat__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        .__chat__text__user {
+          // max-width: 80%;
+          border-radius: 8px 8px 0px 8px;
+          background: #191919;
+          padding: 12px;
+          color: #fff;
+          font-family: Raleway;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        // When application background color change to white
+        .__app__white__chat__text__user {
+          background: #000060 !important;
+        }
+        // White background copy text
+        .__app__white__copy__text {
+          color: #000;
+          font-family: Raleway;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        .__chat__text__incoming {
+          border-radius: 8px 8px 8px 0px;
+          background: rgba(255, 255, 255, 0.2);
+          padding: 12px;
+          align-self: flex-start;
+        }
+        .__chat__text__incoming__img {
+          align-self: flex-start;
+          .__incoming__img {
+            max-width: 300px;
+            max-height: 236px;
+            img {
+              object-fit: contain;
+              object-position: center;
+            }
+          }
+        }
+      }
+      .__empty__conversation {
+        // White background text color setting
+        .__app__white__text__h2 {
+          color: rgba(0, 0, 96, 0.67) !important;
+        }
+        h2 {
+          color: #fff;
+          text-align: center;
+          font-family: Raleway;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          @media (min-width: 1024px) {
+            width: 80%;
+            text-align: center;
+          }
+        }
+      }
+
+      // Regenerating Text
+      .__regenerate__text__container {
+        .__regenerate__text {
+          border-radius: 4px;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          background: #202123;
+          display: inline-flex;
+          padding: 7px 13px;
+          align-items: center;
+          gap: 10px;
+          justify-content: center;
+          .__regenerate__txt {
+            color: #fff;
+            font-family: Raleway;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    .__sub__container__bottom {
+      height: 10%;
+      .__input__bottom {
+        .__send__icon {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        width: 100%;
+        .__input__box {
+          border-radius: 8px;
+          border: 1px solid #fff;
+          background: rgba(255, 255, 255, 0.1);
+          // box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.2);
+          outline: none;
+          color: #fff;
+          font-family: Raleway;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        // When application background color change to white
+        .__app__white__input__box__ {
+          border: 1px solid #000060 !important;
+          outline: #000060 !important;
+          color: #000060 !important;
+          :focus {
+            border: 1px solid #000060 !important;
+            outline: #000060 !important;
+          }
+        }
+        @media (min-width: 1024px) {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
