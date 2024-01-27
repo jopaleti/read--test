@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import "./Conversation.scss";
 import { ConversationTemplate } from "../../Components";
-import { img, r } from "../../assets";
+import { r } from "../../assets";
 // Import SidebarContext Component
 import { SidebarContext, BackgroundContext } from "../../Components/Context";
 
