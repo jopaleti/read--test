@@ -1,4 +1,4 @@
 [build]
 command = "npm run build"
 functions = "build/functions"
-base = "/"
+base = "/opt/build/repo"
