@@ -6,7 +6,7 @@ import {
   Welcome3,
   ManageBrand,
   Conversation,
-} from "./Pages";
+} from "./Pages/index";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Import SidebarContextProvider component
