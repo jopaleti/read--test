@@ -1,5 +1,5 @@
 import Start from "./Start/Start";
-import Signup from "./SignUp/SignUp";
+import Signup from "./SignUp/Signup";
 import Signin from "./Signin/Signin";
 import Welcome1 from "./Welcome1/Welcome1";
 import Welcome2 from "./Welcome2/Welcome2";
