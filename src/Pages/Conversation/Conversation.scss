@@ -126,7 +126,21 @@
     }
     .__sub__container__bottom {
       height: 10%;
+      .__app__white__input__box__ {
+        border: 1px solid #000060 !important;
+        outline: #000060 !important;
+        color: #000060 !important;
+        :focus {
+          border: 1px solid #000060 !important;
+          outline: #000060 !important;
+        }
+      }
       .__input__bottom {
+        width: 100%;
+        padding: 12px !important;
+        border-radius: 8px;
+        border: 1px solid #fff;
+        background: rgba(255, 255, 255, 0.1);
         .__send__icon {
           position: absolute;
           right: 10px;
@@ -156,6 +170,9 @@
             border: 1px solid #000060 !important;
             outline: #000060 !important;
           }
+        }
+        button {
+          width: 95%;
         }
         @media (min-width: 1024px) {
           width: 80%;

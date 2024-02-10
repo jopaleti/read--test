@@ -261,7 +261,7 @@ function ManageBrand() {
                 </div>
 
                 {/* Adding Modal Box */}
-                {open && (
+                {/* {open && (
                   <div className="py-3 __modal__color fixed top-1/4">
                     <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
                       <table className="w-full text-sm text-left rtl:text-right text-white dark:text-gray-400">
@@ -320,7 +320,7 @@ function ManageBrand() {
                       </table>
                     </div>
                   </div>
-                )}
+                )} */}
               </div>
 
               {/* Font Container */}

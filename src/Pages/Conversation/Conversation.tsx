@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import "./Conversation.scss";
 import { ConversationTemplate } from "../../Components";
-import { r } from "../../assets";
+import { drop, r } from "../../assets";
 // Import SidebarContext Component
 import { SidebarContext, BackgroundContext } from "../../Components/Context";
 
@@ -313,13 +313,17 @@ function Conversation() {
             </section>
           </div>
           <div className="__sub__container__bottom flex justify-center items-center">
-            <div className="__input__bottom relative">
-              <input
+            <div
+              className={`__input__bottom relative ${
+                background == "white" && "__app__white__input__box__"
+              }`}
+            >
+              {/* <input
                 type="text"
                 className={`h-full w-full p-3 __input__box ${
                   background == "white" && "__app__white__input__box__"
                 }`}
-              />
+              /> */}
               <div
                 className="__send__icon p-1 rounded"
                 style={{
@@ -349,6 +353,12 @@ function Conversation() {
                   />
                 </svg>
               </div>
+
+              {/* Dropdown button */}
+              <button className="flex justify-between items-center">
+                <h1>Design Details</h1>
+                <img src={drop} alt="logo.jpg" />
+              </button>
             </div>
           </div>
         </div>
