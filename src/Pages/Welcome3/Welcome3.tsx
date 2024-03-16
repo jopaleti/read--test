@@ -17,7 +17,7 @@ function Welcome3() {
     },
     {
       id: 3,
-      text: "Limited knowledge of world and events after 2021",
+      text: "generates design in Instagram post size (1080px by 1080px)",
     },
   ];
   const svg: any = (
@@ -51,7 +51,7 @@ function Welcome3() {
 
   return (
     <div className="h-full animate__animated animate__backInLeft">
-      <Welcome svg={svg} ls={ls} />
+      <Welcome svg={svg} ls={ls}link_to="/conversation" />
     </div>
   );
 }

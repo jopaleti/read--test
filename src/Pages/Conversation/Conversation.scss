@@ -73,8 +73,8 @@
         .__chat__text__incoming__img {
           align-self: flex-start;
           .__incoming__img {
-            max-width: 300px;
-            max-height: 236px;
+            max-width: 88%;
+            max-height: auto;
             img {
               object-fit: contain;
               object-position: center;
@@ -171,8 +171,72 @@
             outline: #000060 !important;
           }
         }
-        button {
-          width: 95%;
+        .__conversion__btn__open {
+          padding: 12px;
+          border-radius: 8px;
+          border: 2px solid #000060;
+        }
+        .conversation__dropdown {
+          width: 85%;
+          .conversation__btn {
+          }
+        }
+        .__dropdown__text__ {
+          position: fixed;
+          bottom: 15px;
+          width: 82%;
+          left: 10px;
+          background: white;
+          // background-color: red;
+          box-sizing: border-box;
+          border-radius: 8px;
+          border: 2px solid #000060;
+          @media (min-width: 1000px) {
+            width: 60% !important;
+            margin-left: 30%;
+          }
+          .__modal {
+            width: 93%;
+            background-color: #fff;
+            z-index: 1000;
+            padding: 10px;
+            border: 1px solid #000060;
+            border-radius: 8px;
+            .__upload {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              .__upload__text {
+                .__upload__h1 {
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                  color: #000060 !important;
+                }
+                p {
+                  font-size: 13px;
+                }
+              }
+            }
+            .__upload__btn {
+              width: 49%;
+              border: 1px solid #000060;
+              border-radius: 10px;
+              .__upload__h3 {
+                font-size: 13px !important;
+                color: #000060 !important;
+              }
+            }
+            .__upload__btn__2 {
+              background-color: #000060 !important;
+              .__upload__h3 {
+                font-size: 13px !important;
+                color: #fff !important;
+              }
+            }
+          }
         }
         @media (min-width: 1024px) {
           width: 80%;
