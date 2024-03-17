@@ -1,11 +1,10 @@
-import { useContext, useState, useRef, ChangeEvent } from "react";
+import { useContext, useState, ChangeEvent } from "react";
 import "./Conversation.scss";
 import { Birthday, ConversationTemplate } from "../../Components";
 import {
   c,
   dr2,
   drop,
-  img,
   lib,
   r,
   remove,
