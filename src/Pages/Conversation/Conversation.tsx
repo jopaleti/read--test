@@ -75,7 +75,7 @@ function Conversation() {
 
   // Display the generated design image if correct
   const [status, setStatus] = useState<boolean>(false);
-  const [category, setCategory] = useState<string>("birthda");
+  const [category] = useState<string>("birthda");
   // Handle submit
   const handleSubmit = () => {
     console.log("first!!!!!!!!!!!!!!!!");
