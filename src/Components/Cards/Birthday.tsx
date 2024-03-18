@@ -1,4 +1,4 @@
-import { b } from "../../assets";
+
 import "./Birthday.scss";
 
 function Birthday(props: any) {

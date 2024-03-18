@@ -1,4 +1,4 @@
-import { cake, lb, lt, rb, rt } from "../../assets";
+import { lb, lt, rb } from "../../assets";
 import "./Cake.scss";
 
 function Cake(props: any) {
