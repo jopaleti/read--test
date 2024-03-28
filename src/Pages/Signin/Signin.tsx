@@ -12,7 +12,8 @@ function Signin() {
   const { background } = useContext(BackgroundContext);
 
   const navigate = useNavigate();
-  const [preloader, setPreloader] = useState(true);
+  // Resetting preloader to true if needed
+  const [preloader, setPreloader] = useState(false);
 
   useEffect(() => {
     setTimeout(() => setPreloader(false), 2800);
@@ -178,7 +179,7 @@ function Signin() {
                   }}
                 >
                   Don’t have an account yet?{" "}
-                  <button>
+                  <button onClick={()=> navigate("/signup")}>
                     <span>Sign up</span>
                   </button>
                 </h4>

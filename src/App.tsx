@@ -6,6 +6,8 @@ import {
   Welcome3,
   ManageBrand,
   Conversation,
+  Google,
+  Homepage
 } from "./Pages/index";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -29,13 +31,15 @@ function App() {
       <SidebarContextProvider>
         <BrowserRouter basename="/">
           <Routes>
-            <Route path="/" element={<Signin />} />
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/" element={<Homepage />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/welcome_1" element={<Welcome1 />} />
             <Route path="/welcome_2" element={<Welcome2 />} />
             <Route path="/welcome_3" element={<Welcome3 />} />
             <Route path="/manage" element={<ManageBrand />} />
             <Route path="/conversation" element={<Conversation />} />
+            <Route path="/google" element={<Google />} />
           </Routes>
         </BrowserRouter>
       </SidebarContextProvider>
